@@ -5,7 +5,9 @@
 # Home page
 GET     /                                       Application.index
 GET 	/sndstart								SndClient.index
-*	/sndsearch								SndClient.search
+*		/sndsearch								SndClient.search
+*		/findLibrisPerson/name/{name}				Libris.findLibrisPerson
+
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
@@ -15,3 +17,4 @@ GET     /public/                                staticDir:public
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+
